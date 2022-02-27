@@ -1,86 +1,106 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import H1 from '../components/H1'
+import Navbar from '../components/Navbar'
+import FAQ from '../components/FAQ'
+import Footer from '../components/Footer'
+import HouseOfSparta from '../components/HouseOfSparta'
+import Roadmap from '../components/Roadmap'
+import Attributes from '../components/Attributes'
+import WhyHouseOfSparta from '../components/WhyHouseOfSparta'
+import GameOverview from '../components/Game'
+import Pillars from '../components/Pillars'
+import NFTSpecs from '../components/NFTSpecs'
+import Team from '../components/Team'
+import Partners from '../components/Partners'
 
-const Home: NextPage = () => {
+
+export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>House of Sparta</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <div className='bg-[url("/IntroBg.png")] w-screen min-h-screen lg:bg-right-top bg-no-repeat bg-cover bg-center  drop-shadow-[0_35px_35px_rgba(0,0,0,1)] relative'>
+        <nav>
+          <Navbar></Navbar>
+        </nav>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+        {/* INTRO SECTION */}
+          <div className='flex flex-col justify-center items-center px-[20px] py-[180px] relative'>
+            <div>
+              <H1 title="WELCOME TO THE LEGION"></H1>
+            </div>
+            <div className='mt-[40px]'>
+              <video width="1100" controls poster='/videoposter.jpeg' src="/trailer.mp4"></video>
+            </div>
+            <div className='mt-[60px]'>
+              <a href='#' className='md:py-[25px] md:px-[60px] px-[30px] py-[10px] rounded-[15px] bg-black/70 text-white font-[Roboto] font-bold text-[24px]'>View Litepaper</a>
+            </div>
+          </div>
+          <div className='absolute -bottom-[165px]'>   
+            <div className=' w-screen h-[165px] bg-gradient-to-b from-black/0 to-black z-10'></div>
+            <div className=' w-screen h-[165px] bg-gradient-to-b from-black to-black/0 z-10'></div>
+          </div>
+      </div>
+        
+      <div className='py-[250px] relative overflow-hidden w-screen'>
+        {/* Bg Images */}
+        
+            <img src='/minataur.png' 
+            className='absolute 
+            scale-[3] top-[800px] left-[300px] 
+            xl:scale-[2] xl:left-[500px] xl:top-[800px] opacity-30 z-0' data-aos="fade-in">
+            </img>
+          
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+          <img src='/medusa.png' 
+          className='absolute 
+          scale-[3] top-[4800px] right-[300px] 
+          xl:scale-[2] xl:right-[600px] xl:top-[3900px] opacity-30 z-0'>
+          </img>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+          <img src='/titan.png' className=' absolute 
+          scale-[3] top-[7500px] left-[100px] 
+          xl:scale-[1.5] xl:left-[200px] xl:top-[6800px] opacity-30 z-0'>
+          </img>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+          <img src='/echidna.png' className=' absolute 
+          scale-[3] top-[9500px] -left-[100px] 
+          xl:scale-[1.5] xl:-left-[300px] xl:top-[9000px] opacity-30 z-0'>
+          </img>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+          <img src='/manticore.png' className=' absolute 
+          scale-[2] top-[11300px] left-[300px] 
+          xl:scale-[1] xl:left-[600px] xl:top-[9500px] opacity-30 z-0'>
+          </img>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <img src='/centeur.png' className=' absolute 
+        scale-[4] top-[13300px] right-[100px] 
+        xl:scale-[1.5] xl:right-[400px] xl:top-[11000px] opacity-30 z-0 '>
+        </img>
+
+        <HouseOfSparta></HouseOfSparta>
+        <Roadmap></Roadmap>
+        <Attributes></Attributes>
+        <WhyHouseOfSparta></WhyHouseOfSparta> 
+        <GameOverview></GameOverview>
+        <Pillars></Pillars>
+        <NFTSpecs></NFTSpecs>
+        <FAQ></FAQ>
+        <Team></Team>
+        <Partners></Partners>
+      </div>
+      {/* Div Transition Gradient */}
+      <div className='relative'>
+        <div className="absolute -top-[160px]">
+          <div className="bg-gradient-to-b from-black/0 to-black h-[165px] w-screen"></div>
+          <div className="bg-gradient-to-b from-black to-black/0 h-[165px] w-screen"></div>
         </div>
-      </main>
+      </div>
+      <Footer></Footer>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
     </div>
   )
 }
-
-export default Home
