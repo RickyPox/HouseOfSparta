@@ -1,3 +1,5 @@
+import ScrollAnimation from "react-animate-on-scroll"
+
 const navigation = [
     { name: 'Sparta', href: '#HouseSparta' },
     { name: 'Roadmap', href: '#Roadmap' },
@@ -31,7 +33,7 @@ export default function Footer(){
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                        'text-white rounded-md  font-[Cinzel] font-bold text-[14px]'
+                        'text-white rounded-md p-[10px] font-[Cinzel] font-bold text-[14px] hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150'
                         )}
                     >
                         {item.name}
@@ -46,18 +48,19 @@ export default function Footer(){
                     © 2022 House Of Sparta.  All Rights Reserved
                 </p>
                 </div>
-                <div className="flex flex-row justify-between w-1/2 lg:w-2/12"> 
-                    <a href="https://discord.gg/houseofsparta" target="_blank">        
+                <div className="flex flex-row justify-end space-x-10 w-1/2 lg:w-2/12]"> 
+                    <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://discord.gg/houseofsparta" target="_blank">        
                         <img src="Discord.svg"></img>
                     </a>
-                    <a href="https://twitter.com/Houseofsparta_" target="_blank">
+                    <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://twitter.com/Houseofsparta_" target="_blank">
                         <img src="Twitter.svg"></img>
                     </a>    
-                    <a href="https://www.instagram.com/houseofsparta_/">
+                    <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://www.instagram.com/houseofsparta_/">
                         <img src="Instagram.svg"></img>
                     </a>
                 </div>
             </div>
             </div>
+
     )
 }

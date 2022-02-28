@@ -1,12 +1,16 @@
+import ScrollAnimation from "react-animate-on-scroll"
 import H1 from "./H1"
 import H2 from "./H2"
 
 export default function WhyHouseOfSparta(){
     return (
         <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col space-y-20 mt-[300px]' id="WhySparta">
+          <ScrollAnimation animateOnce animateIn="animate__bounceIn">
             <div className='flex items-center justify-center relative z-10'>
               <H1 title='WHY HOUSE OF SPARTA?'></H1>
             </div>
+          </ScrollAnimation> 
+          <ScrollAnimation animateOnce animateIn="animate__heartBeat"> 
             <div className='flex lg:flex-row flex-col lg:justify-between justify-center relative z-10 space-y-20 lg:space-y-0'>
 
               <div className='flex flex-col items-center  space-y-5 lg:space-y-10 lg:w-1/3'>
@@ -37,6 +41,7 @@ export default function WhyHouseOfSparta(){
                 </div>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
 
     )

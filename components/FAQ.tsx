@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
+import ScrollAnimation from 'react-animate-on-scroll'
 import H1 from './H1'
 
 
@@ -16,32 +17,35 @@ export default function FAQ() {
       <div>
         <div>
           <div>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
-                  {({ open }) => (
-                    <>
-                      <dt className="text-lg py-[15px]">
-                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                          <span className="font-[Cinzel] text-[24px] font-black text-white">
-                          When do you launch?
-                          </span>
-                          <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          We are planning to launch Feb 1st.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-            </dl>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
+              <dl className="mt-6">
+                  <Disclosure as="div" className="py-6 border-b-[1px]">
+                    {({ open }) => (
+                      <>
+                        <dt className="text-lg py-[15px]">
+                          <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                            <span className="font-[Cinzel] text-[24px] font-black text-white">
+                            When do you launch?
+                            </span>
+                            <span className="ml-6 h-7 flex items-center">
+                              <ChevronDownIcon
+                                className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                                aria-hidden="true"
+                              />
+                            </span>
+                          </Disclosure.Button>
+                        </dt>
+                        <Disclosure.Panel as="dd" className="mt-2 pr-12 answer">
+                          <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
+                            We are planning to launch Feb 1st.
+                          </p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+              </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -71,6 +75,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -103,6 +109,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -135,6 +143,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -161,6 +171,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -187,6 +199,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -213,6 +227,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -239,6 +255,8 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
             <dl className="mt-6">
                 <Disclosure as="div" className="py-6 border-b-[1px]">
                   {({ open }) => (
@@ -265,6 +283,7 @@ export default function FAQ() {
                   )}
                 </Disclosure>
             </dl>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

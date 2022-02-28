@@ -12,12 +12,20 @@ import Pillars from '../components/Pillars'
 import NFTSpecs from '../components/NFTSpecs'
 import Team from '../components/Team'
 import Partners from '../components/Partners'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 export default function Home() {
   return (
     <div>
       <Head>
+      <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
         <title>House of Sparta</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -36,7 +44,7 @@ export default function Home() {
               <video width="1100" controls poster='/videoposter.jpeg' src="/trailer.mp4"></video>
             </div>
             <div className='mt-[60px]'>
-              <a href='#' className='md:py-[25px] md:px-[60px] px-[30px] py-[10px] rounded-[15px] bg-black/70 text-white font-[Roboto] font-bold text-[24px]'>View Litepaper</a>
+              <a href='#' className='md:py-[25px] md:px-[60px] px-[30px] py-[10px] rounded-[15px] bg-black/70 hover:bg-black/90 text-white font-[Roboto] font-bold text-[24px]'>View Litepaper</a>
             </div>
           </div>
           <div className='absolute -bottom-[165px]'>   
@@ -47,14 +55,14 @@ export default function Home() {
         
       <div className='py-[250px] relative overflow-hidden w-screen'>
         {/* Bg Images */}
-        
+
             <img src='/minataur.png' 
             className='absolute 
             scale-[3] top-[800px] left-[300px] 
             xl:scale-[2] xl:left-[500px] xl:top-[800px] opacity-30 z-0' data-aos="fade-in">
             </img>
-          
 
+      
           <img src='/medusa.png' 
           className='absolute 
           scale-[3] top-[4800px] right-[300px] 

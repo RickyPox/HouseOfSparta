@@ -1,10 +1,13 @@
 import H1 from "./H1"
-
+import ScrollAnimation from 'react-animate-on-scroll'
 export default function Attributes(){
     return (
         <div className='2xl:px-[300px] lg:px-[160px] flex flex-col justify-center items-center mt-[300px] z-10 relative space-y-[200px]' id="Attributes">
-        <H1 title="Commander Attributes"></H1>
+          <ScrollAnimation animateOnce animateIn="animate__zoomInDown">
+            <H1 title="Commander Attributes"></H1>
+          </ScrollAnimation>
         <div className='flex flex-col align-middle justify-center items-center'>
+        <ScrollAnimation animateOnce animateIn="animate__zoomIn">  
           <div className='slider w-[400px] relative right-0 bottom-0 mx-auto h-[500px]'>
             {/* SLIDER */}
             <div className='w-[400px] absolute slider-item4 flex flex-col items-center'>
@@ -33,8 +36,9 @@ export default function Attributes(){
               <p className='font-[Roboto] text-[18px] text-white leading-[30px]'>Commander Spartan</p>
               <p className='font-[Roboto] font-regular text-[18px] text-white leading-[30px]'>Warrior Armour</p>
             </div>
-            {/* SLIDER END*/}
           </div>
+          </ScrollAnimation>
+          {/* SLIDER END*/}
           <div className='flex w-[400px] justify-between items-center mb-[75px]'>
             <p className='font-[Cinzel] font-bold text-item1'>Common</p>
             <div className='w-[12px] h-[12px] rounded-full text-item2'></div>
@@ -43,7 +47,7 @@ export default function Attributes(){
             <p className='font-[Cinzel] font-bold text-item5'>Rare</p>   
           </div>
           <div>
-          <a href='#' className='py-[25px] px-[60px] rounded-[15px] bg-black/70 text-white font-[Roboto] font-bold text-[24px]'>See full rarity</a>
+          <a href='#' className='py-[25px] px-[60px] rounded-[15px] bg-black/70 hover:bg-black/90 text-white font-[Roboto] font-bold text-[24px]'>See full rarity</a>
           </div>
         </div>
       </div>

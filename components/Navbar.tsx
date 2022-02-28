@@ -29,7 +29,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
 
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-black/90 focus:outline-none ">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -43,12 +43,12 @@ export default function Navbar() {
                   <img
                     className="block xl:hidden"
                     src="/Logo.png"
-                    alt="Workflow"
+                    alt="HouseOfSparta"
                   />
                   <img
                     className="hidden xl:block"
                     src="/Logo.png"
-                    alt="Workflow"
+                    alt="HouseOfSparta"
                   />
                 </div>
                 <div className="hidden lg:block lg:ml-6">
@@ -68,13 +68,13 @@ export default function Navbar() {
                   </div>
                 </div>
                 <div className='lg:flex space-x-5 hidden'>
-                <a href="https://discord.gg/houseofsparta" target="_blank">        
+                <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://discord.gg/houseofsparta" target="_blank">        
                         <img src="Discord.svg"></img>
                     </a>
-                    <a href="https://twitter.com/Houseofsparta_" target="_blank">
+                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://twitter.com/Houseofsparta_" target="_blank">
                         <img src="Twitter.svg"></img>
                     </a>    
-                    <a href="https://www.instagram.com/houseofsparta_/">
+                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/">
                         <img src="Instagram.svg"></img>
                     </a>
                 </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                        ' text-white block px-3 py-2 rounded-md  font-[Cinzel] font-bold text-[14px]'
+                        ' text-white block px-3 py-2 rounded-md  font-[Cinzel] font-bold text-[14px] hover:bg-black/90 transition-all ease-in-out duration-150'
                   )}
 
                 >
@@ -97,13 +97,13 @@ export default function Navbar() {
                 </Disclosure.Button>
               ))}
               <div className='flex px-3 space-x-5 py-2'>
-              <a href="https://discord.gg/houseofsparta" target="_blank">        
+              <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://discord.gg/houseofsparta" target="_blank">        
                         <img src="Discord.svg"></img>
                     </a>
-                    <a href="https://twitter.com/Houseofsparta_" target="_blank">
+                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://twitter.com/Houseofsparta_" target="_blank">
                         <img src="Twitter.svg"></img>
                     </a>    
-                    <a href="https://www.instagram.com/houseofsparta_/">
+                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/">
                         <img src="Instagram.svg"></img>
                     </a>
                 </div>
