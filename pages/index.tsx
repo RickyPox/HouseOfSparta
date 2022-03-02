@@ -13,6 +13,7 @@ import NFTSpecs from '../components/NFTSpecs'
 import Team from '../components/Team'
 import Partners from '../components/Partners'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Spartans from '../components/Spartans'
 
 
 export default function Home() {
@@ -94,6 +95,7 @@ export default function Home() {
         <Attributes></Attributes>
         <WhyHouseOfSparta></WhyHouseOfSparta> 
         <GameOverview></GameOverview>
+        <Spartans></Spartans>
         <Pillars></Pillars>
         <NFTSpecs></NFTSpecs>
         <FAQ></FAQ>
