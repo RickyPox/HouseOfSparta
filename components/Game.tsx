@@ -3,7 +3,7 @@ import H1 from "./H1"
 
 export default function GameOverview(){
     return (
-        <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col mt-[300px] space-y-20' id="Game">
+        <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col pt-[300px] space-y-20' id="Game">
           <ScrollAnimation animateOnce animateIn="animate__lightSpeedInRight">
           <div className='relative flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-center'> 
             <H1 title='GAME OVERVIEW'></H1>

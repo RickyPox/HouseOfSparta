@@ -7,6 +7,7 @@ const navigation = [
     { name: 'Why Sparta?', href: '#WhySparta' },
     { name: 'Game', href: '#Game' },
     { name: 'Pillars', href: '#Pillars' },
+    { name: '3D Models', href: '#Models' },
     { name: 'Specs', href: '#Specs' },
     { name: 'Faq', href: '#Faq' },
     { name: 'Team & Partners', href: '#Team' },
@@ -20,14 +21,14 @@ export default function Footer(){
     return (
         <div className='py-[20px] flex flex-col lg:justify-start justify-center items-center lg:items-start 2xl:px-[300px] lg:px-[160px] px-[20px] bg-black relative z-10'>  
             <div className="flex-shrink-0 flex">
-                <img
+                <a href="#"><img
                     className="block"
                     src="/Logo.png"
                     alt="HouseOfSparta"
-                />
+                /></a>
             </div>
             <div className=" hidden lg:block w-full py-[50px] border-b-[1px] border-white">
-                <div className="flex space-x-10">
+                <div className="flex xl:space-x-10 text-center">
                     {navigation.map((item) => (
                     <a
                         key={item.name}

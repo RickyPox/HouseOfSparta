@@ -3,7 +3,7 @@ import H1 from "./H1"
 
 export default function Partners(){
     return (
-      <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end mt-[300px] relative z-10'>
+      <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end pt-[300px] relative z-10'>
         <div className='flex justify-center lg:justify-end'>
           <ScrollAnimation animateOnce animateIn="animate__lightSpeedInRight">
             <div className='flex flex-col space-y-10'>

@@ -10,7 +10,7 @@ function classNames(...classes) {
 }
 export default function FAQ() {
   return (
-    <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end mt-[300px] relative z-10' id="Faq">
+    <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end pt-[300px] relative z-10' id="Faq">
       <div className='flex justify-start'>
         <H1 title="FAQ"></H1>
       </div>
@@ -18,8 +18,8 @@ export default function FAQ() {
         <div>
           <div>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-              <dl className="mt-6">
-                  <Disclosure as="div" className="py-6 border-b-[1px]">
+              <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                  <Disclosure as="div" className="py-6">
                     {({ open }) => (
                       <>
                         <dt className="text-lg py-[15px]">
@@ -46,8 +46,8 @@ export default function FAQ() {
               </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -77,8 +77,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -111,8 +111,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -145,8 +145,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -173,8 +173,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -201,8 +201,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -229,8 +229,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
@@ -257,8 +257,8 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6">
-                <Disclosure as="div" className="py-6 border-b-[1px]">
+            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">

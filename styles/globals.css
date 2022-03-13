@@ -15,6 +15,42 @@ body{
     overflow-x: hidden;
 }
 
+
+model-viewer{
+    display: flex;
+    justify-content: center ;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    height: 800px;
+    --progress-bar-color: red;
+    --poster-color: transparent;
+}
+
+::-webkit-scrollbar-track
+{
+border-radius: 5px;
+background-color: #00000050;
+}
+
+::-webkit-scrollbar
+{
+width: 16px;
+background-color: #00000050;
+}
+
+::-webkit-scrollbar-thumb
+{
+border-radius: 5px;
+background-color: #D62929;
+background-image: -webkit-linear-gradient(90deg,
+  transparent,
+  rgba(0, 0, 0, 0.4) 50%,
+  transparent,
+  transparent)
+}
+
+
 @font-face {
     font-family: 'Uncial-Antiqua';
     src: 
@@ -33,12 +69,46 @@ body{
   90% {transform: rotate(0deg);}
 }
 
-.img-box{
+.sword{
     transition: ease 0.5s;
 }
+.sword:hover{
+    content: url("/OpenSwords.png");
+}
+
+.navbar{
+    transition: ease 0.5s;
+}
+
+.milestone{
+    transition: ease 0.5s;
+}
+
+.roadmapLine{
+    background: linear-gradient(0deg, #000000 83%, #FF1900 17%);
+}
+
+.question{
+    transition: ease 0.5s;
+}
+.img-box{
+    transition: ease 0.5s;
+    animation: scale 5s infinite;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
 .img-box:hover{
     transform: scale(1.5);
     transition: ease 0.5s;
+    animation: none;
 }
 
 .img-box:hover + .phase-description {

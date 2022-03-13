@@ -3,7 +3,7 @@ import H1 from "./H1"
 import H2 from "./H2"
 export default function Pillars(){
     return (
-        <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end mt-[300px] space-y-20 relative z-10' id="Pillars">
+        <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end pt-[300px] space-y-20 relative z-10' id="Pillars">
           <div className='flex justify-end'>
             <ScrollAnimation animateOnce animateIn="animate__bounceInRight">
               <H1 title="THE FOUR PILLARS OF GAMEPLAY"></H1>

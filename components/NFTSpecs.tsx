@@ -3,15 +3,16 @@ import H1 from "./H1"
 import H2 from "./H2"
 export default function NFTSpecs(){
     return (
-        <div className='flex flex-col justify-end mt-[300px] relative z-10' id="Specs">
-          <div className='2xl:px-[300px] lg:px-[160px] px-[20px] '>
+        <div className='flex flex-col justify-end pt-[300px] relative z-10' id="Specs">
+            <div className=" px-[20px]  2xl:px-[300px] lg:px-[160px]">
             <ScrollAnimation animateOnce animateIn="animate__rotateInUpLeft">
               <div className='flex justify-start'>
                 <H1 title="NFT SPECS"></H1>
               </div>
             </ScrollAnimation>
+            </div>
             <ScrollAnimation animateOnce animateIn="animate__slideInDown">
-            <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center'>
+            <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center bg-black/50  px-[20px]  2xl:px-[300px] lg:px-[160px]'>
               <div className='lg:w-6/12'>
                 <H2 title='Prizes'></H2>
                 <p className='font-[Roboto] text-[18px] text-white leading-[30px] mt-[25px]'>
@@ -25,7 +26,7 @@ export default function NFTSpecs(){
               
             </div>
             </ScrollAnimation>
-          </div>
+
           <ScrollAnimation animateOnce animateIn="animate__slideInDown">
           <div className=' 2xl:px-[300px] lg:px-[160px] px-[20px] flex justify-between items-center w-screen bg-[#FF1900]'>
             <div className='lg:w-6/12 py-[20px]'>

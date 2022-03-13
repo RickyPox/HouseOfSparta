@@ -3,7 +3,7 @@ import H1 from "./H1"
 
 export default function Team(){
     return (
-        <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end mt-[300px] space-y-20 relative z-10' id="Team">
+        <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end pt-[300px] space-y-20 relative z-10' id="Team">
           <ScrollAnimation animateOnce animateIn="animate__bounceIn">
             <div className='flex justify-center lg:justify-end'>
               <H1 title="Our Team"></H1>

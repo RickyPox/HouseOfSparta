@@ -1,14 +1,15 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-
+import { useState } from 'react'
 const navigation = [
   { name: 'Sparta', href: '#HouseSparta' },
   { name: 'Roadmap', href: '#Roadmap' },
   { name: 'Attributes', href: '#Attributes' },
   { name: 'Why Sparta?', href: '#WhySparta' },
   { name: 'Game', href: '#Game' },
+  { name: '3D Models', href: '#Models' },
   { name: 'Pillars', href: '#Pillars' },
   { name: 'Specs', href: '#Specs' },
   { name: 'Faq', href: '#Faq' },
@@ -19,14 +20,31 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')  
 }
 
+
 export default function Navbar() {
+  
+  
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if(window.scrollY >= 80){
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+  useEffect(() => {
+    changeBackground()   
+    window.addEventListener("scroll", changeBackground)
+  })
+
   return (
+    
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="w-screen px-2 lg:px-6 xl:px-40">
+          <div className={"w-screen px-2 lg:px-6 xl:px-40 lg:fixed z-20 navbar " + (navbar ? "bg-[#141414]" : "bg-transparent")} >
             <div className="relative flex items-center justify-between h-20">
-              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
+              <div className="absolute inset-y-0 right-[10px] flex items-center lg:hidden">
 
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-black/90 focus:outline-none ">
@@ -40,19 +58,15 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-between ">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block xl:hidden"
+                  <a href="#"><img
+                    className="block"
                     src="/Logo.png"
                     alt="HouseOfSparta"
-                  />
-                  <img
-                    className="hidden xl:block"
-                    src="/Logo.png"
-                    alt="HouseOfSparta"
-                  />
+                  /></a>
+
                 </div>
                 <div className="hidden lg:block lg:ml-6">
-                  <div className="flex space-x-10">
+                  <div className="flex xl:space-x-10 text-center">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -74,7 +88,7 @@ export default function Navbar() {
                     <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://twitter.com/Houseofsparta_" target="_blank">
                         <img src="Twitter.svg"></img>
                     </a>    
-                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/">
+                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/" target="_blank">
                         <img src="Instagram.svg"></img>
                     </a>
                 </div>
@@ -103,7 +117,7 @@ export default function Navbar() {
                     <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://twitter.com/Houseofsparta_" target="_blank">
                         <img src="Twitter.svg"></img>
                     </a>    
-                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/">
+                    <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/" target="_blank">
                         <img src="Instagram.svg"></img>
                     </a>
                 </div>

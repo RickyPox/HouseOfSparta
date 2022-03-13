@@ -2,7 +2,7 @@ import H1 from "./H1"
 import ScrollAnimation from 'react-animate-on-scroll'
 export default function Attributes(){
     return (
-        <div className='2xl:px-[300px] lg:px-[160px] flex flex-col justify-center items-center mt-[300px] z-10 relative space-y-[200px]' id="Attributes">
+        <div className='2xl:px-[300px] lg:px-[160px] flex flex-col justify-center items-center pt-[300px] z-10 relative space-y-[200px]' id="Attributes">
           <ScrollAnimation animateOnce animateIn="animate__zoomInDown">
             <H1 title="Commander Attributes"></H1>
           </ScrollAnimation>
@@ -47,7 +47,7 @@ export default function Attributes(){
             <p className='font-[Cinzel] font-bold text-item5'>Rare</p>   
           </div>
           <div>
-          <a href='#' className='py-[25px] px-[60px] rounded-[15px] bg-black/70 hover:bg-black/90 text-white font-[Roboto] font-bold text-[24px]'>See full rarity</a>
+          <a href='Rarity.png' target="_blank" className='py-[25px] px-[60px] rounded-[15px] bg-black/70 hover:bg-black/90 text-white font-[Roboto] font-bold text-[24px]'>See full rarity</a>
           </div>
         </div>
       </div>
