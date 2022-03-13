@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 export default function Intro() {
 
   function Video(){

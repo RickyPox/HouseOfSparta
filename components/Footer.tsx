@@ -1,4 +1,3 @@
-import ScrollAnimation from "react-animate-on-scroll"
 
 const navigation = [
     { name: 'Sparta', href: '#HouseSparta' },
@@ -56,7 +55,7 @@ export default function Footer(){
                     <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://twitter.com/Houseofsparta_" target="_blank">
                         <img src="Twitter.svg"></img>
                     </a>    
-                    <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://www.instagram.com/houseofsparta_/">
+                    <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://www.instagram.com/houseofsparta_/" target="_blank">
                         <img src="Instagram.svg"></img>
                     </a>
                 </div>
