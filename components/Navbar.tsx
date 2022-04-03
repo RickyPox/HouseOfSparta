@@ -7,8 +7,6 @@ const navigation = [
   { name: 'Sparta', href: '#HouseSparta' },
   { name: 'Roadmap', href: '#Roadmap' },
   { name: 'Attributes', href: '#Attributes' },
-  { name: 'Why Sparta?', href: '#WhySparta' },
-  { name: 'Game', href: '#Game' },
   { name: '3D Models', href: '#Models' },
   { name: 'Pillars', href: '#Pillars' },
   { name: 'Specs', href: '#Specs' },
@@ -42,7 +40,7 @@ export default function Navbar() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className={"w-screen px-2 lg:px-6 xl:px-40 lg:fixed z-20 navbar " + (navbar ? "bg-[#141414]" : "bg-transparent")} >
+          <div className={"w-screen px-2 lg:px-6 xl:px-40 lg:fixed z-40 navbar " + (navbar ? "bg-[#141414]" : "bg-transparent")} >
             <div className="relative flex items-center justify-between h-20">
               <div className="absolute inset-y-0 right-[10px] flex items-center lg:hidden">
 
@@ -72,7 +70,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                        'text-white rounded-md font-[Cinzel] p-[10px] font-bold text-[14px] hover:bg-black/90 hover:scale-[1.2] transition-all ease-in-out duration-150 '
+                        'text-white rounded-md font-[Cinzel] p-[10px] font-regular text-[14px] hover:bg-black/90 hover:scale-[1.2] transition-all ease-in-out duration-150 '
                         )}
 
                       >
@@ -103,7 +101,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                        ' text-white block px-3 py-2 rounded-md  font-[Cinzel] font-bold text-[14px] hover:bg-black/90 transition-all ease-in-out duration-150'
+                        ' text-white block px-3 py-2 rounded-md  font-[Cinzel] font-regular text-[14px] hover:bg-black/90 transition-all ease-in-out duration-150'
                   )}
 
                 >

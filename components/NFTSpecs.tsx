@@ -1,45 +1,66 @@
 import ScrollAnimation from "react-animate-on-scroll"
 import H1 from "./H1"
-import H2 from "./H2"
 export default function NFTSpecs(){
     return (
-        <div className='flex flex-col justify-end pt-[300px] relative z-10' id="Specs">
-            <div className=" px-[20px]  2xl:px-[300px] lg:px-[160px]">
-            <ScrollAnimation animateOnce animateIn="animate__rotateInUpLeft">
-              <div className='flex justify-start'>
-                <H1 title="NFT SPECS"></H1>
-              </div>
-            </ScrollAnimation>
+      <div className='flex flex-col justify-end pt-[100px]  relative' id="Specs">
+        <video src="/Specs.mp4" autoPlay muted loop className="absolute z-0 h-full w-full object-cover"></video>
+        <div className="absolute -top-[165px]">
+          <div className="bg-gradient-to-b from-black/0 to-black h-[165px] w-screen"></div>
+          <div className="bg-gradient-to-b from-black to-black/0 h-[165px] w-screen"></div>
+        </div>
+        <div className="absolute -bottom-[165px]">
+          <div className="bg-gradient-to-b from-black/0 to-black h-[165px] w-screen"></div>
+          <div className="bg-gradient-to-b from-black to-black/0 h-[165px] w-screen"></div>
+        </div>
+        <div>
+        <ScrollAnimation animateOnce animateIn="animate__rotateInUpLeft">
+          <div className='flex justify-center pt-[30px]'>
+            <H1 title="House of Sparta NFT’s"></H1>
+          </div>
+        </ScrollAnimation>
+        </div>
+        
+        <div className="p-[40px] px-[20px] 2xl:px-[300px] lg:px-[160px] z-10">
+        <ScrollAnimation animateOnce animateIn="animate__zoomIn">
+          <div className="grid grid-cols-4 mt-5 ">
+            <div className="m-5">
+              <img src="/SpartanNFT1.png"></img>
             </div>
-            <ScrollAnimation animateOnce animateIn="animate__slideInDown">
-            <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center bg-black/50  px-[20px]  2xl:px-[300px] lg:px-[160px]'>
-              <div className='lg:w-6/12'>
-                <H2 title='Prizes'></H2>
-                <p className='font-[Roboto] text-[18px] text-white leading-[30px] mt-[25px]'>
-                  Your Spartan doubles as your membership badge and grants access to member-only benefits, 
-                  plans include airdrops of collectables, weapons, and armour as well as 10 mythical Gods up for grabs!
-                </p>
-              </div>  
-              <div className='-mb-[100px]'>
-                <img src='Prizes.png'></img>
-              </div>
-              
+            <div className="m-5">
+              <img src="/SpartanNFT2.png"></img>
             </div>
-            </ScrollAnimation>
-
-          <ScrollAnimation animateOnce animateIn="animate__slideInDown">
-          <div className=' 2xl:px-[300px] lg:px-[160px] px-[20px] flex justify-between items-center w-screen bg-[#FF1900]'>
-            <div className='lg:w-6/12 py-[20px]'>
-              <h2 className='"font-[Roboto] text-[24px] font-medium text-black z-10"'> Raids</h2>
-              <p className='font-[Roboto] text-[18px] text-white leading-[30px] mt-[25px]'>
-                A rich and prosperous Sparta allows us to carry out more raids on other Blue Chip NFTs. 
-                We will be plundering NFTs on Solana and distributing them to our loyal holders, the spoils of war will be plentiful. 
-                Spartan raids will occur on a weekly basis from the mint date and holders can expect rewards within the first week and onwards.
-              </p>
+            <div className="m-5">
+              <img src="/SpartanNFT3.png"></img>
             </div>
+            <div className="m-5">
+              <img src="/SpartanNFT4.png"></img>
+            </div>
+          </div>
+          <div className="grid grid-cols-4">
+            <div className="m-5">
+              <img src="/SpartanNFT5.png"></img>
+            </div>
+            <div className="m-5">
+              <img src="/SpartanNFT6.png"></img>
+            </div>
+            <div className="m-5">
+              <img src="/SpartanNFT7.png"></img>
+            </div>
+            <div className="m-5">
+              <img src="/SpartanNFT8.png"></img>
+            </div>
+          </div>
+          <div>
+            <h1 className="font-[Cinzel] font-regular text-white text-[28px] text-center">Spartan NFT Utility</h1>
+            <p className="Font-[HkGrotesk] text-[18px] leading-[50px] mt-[20px] font-regular text-white text-center">
+            Holding a Spartan NFT will afford you a plethora of utility, ranging from early access to the Web-Based mini game, Staking ability & access to exclusive free Airdrops.
+            </p>
           </div>
           </ScrollAnimation>
         </div>
+
+      </div>
+      
 
     )
 }

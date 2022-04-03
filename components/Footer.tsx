@@ -3,8 +3,6 @@ const navigation = [
     { name: 'Sparta', href: '#HouseSparta' },
     { name: 'Roadmap', href: '#Roadmap' },
     { name: 'Attributes', href: '#Attributes' },
-    { name: 'Why Sparta?', href: '#WhySparta' },
-    { name: 'Game', href: '#Game' },
     { name: 'Pillars', href: '#Pillars' },
     { name: '3D Models', href: '#Models' },
     { name: 'Specs', href: '#Specs' },
@@ -33,7 +31,7 @@ export default function Footer(){
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                        'text-white rounded-md p-[10px] font-[Cinzel] font-bold text-[14px] hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150'
+                        'text-white rounded-md p-[10px] font-[Cinzel] font-regular text-[14px] hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150'
                         )}
                     >
                         {item.name}
@@ -44,7 +42,7 @@ export default function Footer(){
             
             <div className=" lg:w-full flex flex-col lg:flex-row lg:justify-between justify-center items-center py-[20px] space-y-10 lg:space-y-0">
                 <div>
-                <p className="font-[Roboto] font-light text-[14px] text-white">
+                <p className="font-[HkGrotesk] font-light text-[14px] text-white">
                     © 2022 House Of Sparta.  All Rights Reserved
                 </p>
                 </div>
