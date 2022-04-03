@@ -20,7 +20,7 @@ export default function Intro() {
         <video className="w-screen h-screen md:h-auto border-0 " autoPlay muted loop id="IntroVideo" src="/VideoIntro.mp4"></video>
         <video className="w-screen h-screen md:h-auto border-0 hidden" autoPlay muted id="LoadVideo" src="/LOAD2.mp4"></video>
         <div className="absolute z-10 flex flex-col justify-center items-center top-1 left-1 right-1 bottom-1 mx-auto my-auto"  id="Btn">
-          <h1 className="text-white font-[Uncial-Antiqua] text-[40px] lg:text-[48px] text-center">
+          <h1 className="text-white font-[Cinzel] text-[40px] lg:text-[48px] text-center">
             Grab your Weapon <br></br>
             Join The House of Sparta
           </h1>

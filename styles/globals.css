@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +10,7 @@ html {
   }
 
 body{
-    background-color: #1B1B1B;
+    background-color: #0c0c0c;
     overflow-x: hidden;
 }
 
@@ -52,10 +51,10 @@ background-image: -webkit-linear-gradient(90deg,
 
 
 @font-face {
-    font-family: 'Uncial-Antiqua';
+    font-family: 'HkGrotesk';
     src: 
-         url('../fonts/UncialAntiqua-Regular.ttf') format('truetype');
-         font-weight: 300 900;
+         url('../fonts/HKGrotesk-Medium.otf') format('truetype');
+         font-weight: 500;
          font-display: swap;
          font-style: normal;
   }
@@ -85,7 +84,7 @@ background-image: -webkit-linear-gradient(90deg,
 }
 
 .roadmapLine{
-    background: linear-gradient(0deg, #000000 83%, #FF1900 17%);
+    background: linear-gradient(0deg, rgb(107 114 128) 80%, #FF1900 20%);
 }
 
 .question{
@@ -101,7 +100,7 @@ background-image: -webkit-linear-gradient(90deg,
         transform: scale(1);
     }
     50%{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 
@@ -448,5 +447,9 @@ animation: slider-rotation 10s infinite
     100%{
         color:white
     }
+}
+
+.carousel-status, .control-arrow, .thumbs{
+    display: none;
 }
 

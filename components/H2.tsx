@@ -5,6 +5,6 @@ export default function H2({
 })   
 {
     return(
-        <h1 className={"font-[Roboto] text-[24px] font-medium text-[#FF1900] z-10"}>{title}</h1>
+        <h1 className={"font-[HkGrotesk] text-[24px] font-regular text-[#FF1900] z-10"}>{title}</h1>
     )
 }

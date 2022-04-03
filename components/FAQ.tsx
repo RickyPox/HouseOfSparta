@@ -10,7 +10,16 @@ function classNames(...classes) {
 }
 export default function FAQ() {
   return (
-    <div className='2xl:px-[300px] lg:px-[160px] px-[20px] flex flex-col justify-end pt-[300px] relative z-10' id="Faq">
+    <div className=' flex flex-col justify-end pt-[100px] bg-[url("/FaqBg.png")] bg-cover bg-no-repeat relative' id="Faq">
+      <div className="absolute -top-[165px]">
+                    <div className="bg-gradient-to-b from-black/0 to-black h-[165px] w-screen"></div>
+                    <div className="bg-gradient-to-b from-black to-black/0 h-[165px] w-screen"></div>
+                </div>
+                <div className="absolute -bottom-[165px]">
+                    <div className="bg-gradient-to-b from-black/0 to-black h-[165px] w-screen"></div>
+                    <div className="bg-gradient-to-b from-black to-black/0 h-[165px] w-screen"></div>
+                </div>
+      <div className='z-20 2xl:px-[300px] lg:px-[160px] px-[20px] pb-[100px]'>
       <div className='flex justify-start'>
         <H1 title="FAQ"></H1>
       </div>
@@ -18,7 +27,7 @@ export default function FAQ() {
         <div>
           <div>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-              <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+              <dl className="mt-6 bg-black/90 px-6 rounded-lg">
                   <Disclosure as="div" className="py-6">
                     {({ open }) => (
                       <>
@@ -36,7 +45,7 @@ export default function FAQ() {
                           </Disclosure.Button>
                         </dt>
                         <Disclosure.Panel as="dd" className="mt-2 pr-12 answer">
-                          <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
+                          <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
                             We are planning to launch Feb 1st.
                           </p>
                         </Disclosure.Panel>
@@ -46,14 +55,14 @@ export default function FAQ() {
               </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+            <dl className="mt-6 bg-black/90 px-6 rounded-lg">
                 <Disclosure as="div" className="py-6">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
                         <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
                           <span className="font-[Cinzel] text-[24px] font-black text-white">
-                          How many Nfts will there be?
+                          How many NFTs will there be?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
                             <ChevronDownIcon
@@ -64,11 +73,11 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                        Initially 4600 Spartans will be available to mint on Solana. 
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        Initially 4600 Spartans will be available to mint on Solana
                         </p>
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                        Later down the line, 4600 Persians will be available to mint.
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">              
+                        Later down the line, 4600 Persians will be available to mint
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -77,131 +86,7 @@ export default function FAQ() {
             </dl>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
-                <Disclosure as="div" className="py-6 ">
-                  {({ open }) => (
-                    <>
-                      <dt className="text-lg py-[15px]">
-                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                          <span className="font-[Cinzel] text-[24px] font-black text-white">
-                            How much will it cost to mint one?
-                          </span>
-                          <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          OG mint price – 1.2 SOL. 
-                        </p>
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          Fractal WL – 1.35 SOL. 
-                        </p>
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          Public Sale – 1.5 SOL.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-            </dl>
-            </ScrollAnimation>
-            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
-                <Disclosure as="div" className="py-6 ">
-                  {({ open }) => (
-                    <>
-                      <dt className="text-lg py-[15px]">
-                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                          <span className="font-[Cinzel] text-[24px] font-black text-white">
-                            Will there be a white list or pre sale?
-                          </span>
-                          <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          Yes, there will be 500 OG members of the “generals corner” in our discord who will be able to mint for a reduced cost.
-                        </p>
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          There will also be 25 FREE mint spaces for the most active members of our community.
-                        </p>
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                        Furthermore, ALL fractal members will be eligible for the Fractal WL sale.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-            </dl>
-            </ScrollAnimation>
-            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
-                <Disclosure as="div" className="py-6 ">
-                  {({ open }) => (
-                    <>
-                      <dt className="text-lg py-[15px]">
-                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                          <span className="font-[Cinzel] text-[24px] font-black text-white">
-                            How do I get a free mint?
-                          </span>
-                          <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          Keep an eye on our discord and Twitter competitions!
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-            </dl>
-            </ScrollAnimation>
-            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
-                <Disclosure as="div" className="py-6 ">
-                  {({ open }) => (
-                    <>
-                      <dt className="text-lg py-[15px]">
-                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                          <span className="font-[Cinzel] text-[24px] font-black text-white">
-                            Will they be different rarities?
-                          </span>
-                          <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          Yes, each trait/attribute will have different rarities. We will be uploading a rarity chart for each collection shortly after the mint date.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-            </dl>
-            </ScrollAnimation>
-            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+            <dl className="mt-6 bg-black/90 px-6 rounded-lg">
                 <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
@@ -219,7 +104,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
                         Royalties will go to the community treasury, which will be used directly for collectible airdrops, floor burns, lotteries raids, and project development.
                         </p>
                       </Disclosure.Panel>
@@ -228,8 +113,8 @@ export default function FAQ() {
                 </Disclosure>
             </dl>
             </ScrollAnimation>
-            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
+            <dl className="mt-6 bg-black/90 px-6 rounded-lg">
                 <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
@@ -247,24 +132,25 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                          Yes, you will start the game with a larger province and army with greater attributes.
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                          Yes, you will start the game with a larger province and army with greater attributes
                         </p>
+
                       </Disclosure.Panel>
                     </>
                   )}
                 </Disclosure>
             </dl>
             </ScrollAnimation>
-            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
-            <dl className="mt-6 bg-black/50 px-6 rounded-lg">
+            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
+            <dl className="mt-6 bg-black/90 px-6 rounded-lg">
                 <Disclosure as="div" className="py-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg py-[15px]">
                         <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
                           <span className="font-[Cinzel] text-[24px] font-black text-white">
-                            Are you donating to charity?
+                            Where can I buy a Spartan NFT?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
                             <ChevronDownIcon
@@ -275,8 +161,64 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[Roboto] text-[18px] text-white leading-[30px] mt-[20px]">
-                        Yes, 2% of the mint. We will be picking charities based off suggestions from our community.
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                          We were the first ever launch on fractal, you can also head over to their site to pick up Spartans and airdrops on secondary – <a href='https://www.fractal.is/houseofsparta' className='text-[#FF1900]' target="_blank">https://www.fractal.is/houseofsparta</a>
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+            </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInLeftBig'>
+            <dl className="mt-6 bg-black/90 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
+                  {({ open }) => (
+                    <>
+                      <dt className="text-lg py-[15px]">
+                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                          <span className="font-[Cinzel] text-[24px] font-black text-white">
+                            Do Spartan NFTs have utility?
+                          </span>
+                          <span className="ml-6 h-7 flex items-center">
+                            <ChevronDownIcon
+                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                              aria-hidden="true"
+                            />
+                          </span>
+                        </Disclosure.Button>
+                      </dt>
+                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        Absolutely, they entitle you to raids and airdrops that are currently ongoing! They will also grant you access to the game and a later ability to stake your NFTs.  
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+            </dl>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce animateIn='animate__fadeInRightBig'>
+            <dl className="mt-6 bg-black/90 px-6 rounded-lg">
+                <Disclosure as="div" className="py-6 ">
+                  {({ open }) => (
+                    <>
+                      <dt className="text-lg py-[15px]">
+                        <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                          <span className="font-[Cinzel] text-[24px] font-black text-white">
+                            How will NFTs be used in game?
+                          </span>
+                          <span className="ml-6 h-7 flex items-center">
+                            <ChevronDownIcon
+                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                              aria-hidden="true"
+                            />
+                          </span>
+                        </Disclosure.Button>
+                      </dt>
+                      <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
+                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                          Holding a Spartan or a Persian in your wallet will grant you access to the game. The rarer your NFT the better your starting position in the game will be. Airdrops will also confer small increases in passive abilities in game.   
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -287,6 +229,7 @@ export default function FAQ() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
