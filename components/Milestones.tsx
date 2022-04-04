@@ -36,8 +36,8 @@ export default function Milestones(){
                         <ScrollAnimation animateOnce animateIn="animate__fadeInRight">
                         <div className="mb-8 flex justify-between w-full h-[300px]">  
                             <div className="order-1 w-5/12"></div>
-                            <div className="z-20 flex items-center order-1 bg-black border-[3px] border-[#FF1900] shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white">&#10004;</h1>
+                            <div className="z-20 flex items-center order-1 bg-black border-[3px] border-[#FF1900] shadow-xl w-8 h-8 rounded-full ">
+                                <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white ">&#10004;</h1>
                             </div>                    
                             <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black milestone ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 1 Q4 2021</h1>
@@ -56,7 +56,7 @@ export default function Milestones(){
                         <div className="mb-8 flex flex-row-reverse justify-between w-full h-[300px] ">
                             <div className="order-1 w-5/12"></div>  
                             <div className="z-20 flex items-center order-1 bg-black border-[3px] border-[#FF1900]   shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white">&#10004;</h1>
+                                <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white stage">&#10004;</h1>
                             </div>                           
                             <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black milestone text-right ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 2 Q1 2022</h1>
@@ -64,8 +64,7 @@ export default function Milestones(){
                                 &#10004; Project Litepaper <br></br>
                                 &#10004; 4,600 Spartan Army NFT Launch on Fractal - Sold Out <br></br>
                                 &#10004; Unveil Gaming Studio Partner iLogos <br></br>
-                                &#10004; Mythical Beasts Community Airdrop <br></br>
-                                &#10004; Greek Gods Community Airdrop
+                                &#10004; Mythical Beasts Community Airdrop
                                 </p>
                             </div>
                         </div>
@@ -82,6 +81,7 @@ export default function Milestones(){
                                 <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] ">                                       
                                     - Seed Fundraising Round  <br></br>
                                     - Electrum NFT Staking Go-Live  <br></br>
+                                    - Greek Gods $Electrum Auction/Mint via Fractal <br></br>
                                     - Expand Core Team
                                 </p>
                             </div>
