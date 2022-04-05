@@ -1,13 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/outline'
 import ScrollAnimation from 'react-animate-on-scroll'
 import H1 from './H1'
 
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 export default function FAQ() {
   return (
     <div className=' flex flex-col justify-end pt-[100px] bg-[url("/FaqBg.png")] bg-cover bg-no-repeat relative' id="Faq">
@@ -37,10 +33,7 @@ export default function FAQ() {
                             When do you launch?
                             </span>
                             <span className="ml-6 h-7 flex items-center">
-                              <ChevronDownIcon
-                                className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                                aria-hidden="true"
-                              />
+                              <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                             </span>
                           </Disclosure.Button>
                         </dt>
@@ -65,10 +58,7 @@ export default function FAQ() {
                           How many NFTs will there be?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
+                          <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                           </span>
                         </Disclosure.Button>
                       </dt>
@@ -96,10 +86,7 @@ export default function FAQ() {
                             Will there be royalties?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
+                          <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                           </span>
                         </Disclosure.Button>
                       </dt>
@@ -124,10 +111,7 @@ export default function FAQ() {
                             Is there an advantage in game if i buy an NFT?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
+                          <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                           </span>
                         </Disclosure.Button>
                       </dt>
@@ -153,10 +137,7 @@ export default function FAQ() {
                             Where can I buy a Spartan NFT?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
+                          <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                           </span>
                         </Disclosure.Button>
                       </dt>
@@ -181,10 +162,7 @@ export default function FAQ() {
                             Do Spartan NFTs have utility?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
+                          <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                           </span>
                         </Disclosure.Button>
                       </dt>
@@ -209,10 +187,7 @@ export default function FAQ() {
                             How will NFTs be used in game?
                           </span>
                           <span className="ml-6 h-7 flex items-center">
-                            <ChevronDownIcon
-                              className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                              aria-hidden="true"
-                            />
+                          <img src="/right-arrow.png" className='rotate-90 w-[20px]'></img>
                           </span>
                         </Disclosure.Button>
                       </dt>
