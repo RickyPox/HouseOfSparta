@@ -14,7 +14,7 @@ const navigation = [
   { name: 'Team & Partners', href: '#Team' },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: String[]) {
   return classes.filter(Boolean).join(' ')  
 }
 
