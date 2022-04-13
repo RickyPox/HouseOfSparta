@@ -3,12 +3,12 @@ export default function Intro() {
   function Video(){
     const IntroVideo = document.getElementById("IntroVideo");
     const LoadVideo = document.getElementById("LoadVideo");
-    IntroVideo.className="hidden"
-    LoadVideo.className="block h-full w-full object-cover"
-    document.getElementById("Btn").className="hidden"
-    LoadVideo.addEventListener("ended",myHandler,false);
+    IntroVideo!.className="hidden"
+    LoadVideo!.className="block h-full w-full object-cover"
+    document.getElementById("Btn")!.className="hidden"
+    LoadVideo!.addEventListener("ended",myHandler,false);
 
-    function myHandler(e){
+    function myHandler(){
     window.location.href="/Home"
   }
   }
@@ -24,7 +24,7 @@ export default function Intro() {
             Grab your Weapon <br></br>
             Join The House of Sparta
           </h1>
-          <img onClick={Video} className="w-[400px] mt-10 sword hover:scale-110 sword cursor-pointer" src="/DualSword.png" ></img>
+          <img onClick={Video} className="w-[400px] mt-10 sword lg:hover:scale-110 sword cursor-pointer" src="/DualSword.png" ></img>
         </div>
     </div>
   )

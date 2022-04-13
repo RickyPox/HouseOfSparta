@@ -53,10 +53,14 @@ background-image: -webkit-linear-gradient(90deg,
 @font-face {
     font-family: 'HkGrotesk';
     src: 
-         url('../fonts/HKGrotesk-Medium.otf') format('truetype');
+         url('/fonts/HKGrotesk-Medium.otf') format('truetype');
          font-weight: 500;
          font-display: swap;
          font-style: normal;
+  }
+
+  p{
+      font-family: "HkGrotesk"!important;
   }
 
   .spear{
@@ -71,10 +75,11 @@ background-image: -webkit-linear-gradient(90deg,
 .sword{
     transition: ease 0.5s;
 }
+@media (min-width: 1024px) { 
 .sword:hover{
     content: url("/OpenSwords.png");
 }
-
+ }
 .navbar{
     transition: ease 0.5s;
 }

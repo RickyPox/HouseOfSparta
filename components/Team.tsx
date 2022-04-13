@@ -12,33 +12,33 @@ export default function Team(){
           <div className='flex flex-col justify-center lg:flex-row lg:justify-between space-y-20 lg:space-y-0'>
             <ScrollAnimation animateOnce animateIn="animate__backInDown">
               <div className='flex flex-col space-y-5 items-center'>
-                <img src='Team1.jpg' className='w-[300px] rounded-[30px]'></img>
+                <img src='/Team1.jpg' className='w-[300px] rounded-[30px]'></img>
                 <p className='font-[Cinzel] font-regular text-[24px] text-white'>
                   Reece Pinnock
                 </p>
-                <p className='font-[HkGrotesk] text-[18px] text-white'>
+                <p className=' text-[18px] text-white'>
                 CEO
                 </p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn="animate__backInDown">
             <div className='flex flex-col space-y-5 items-center'>
-              <img src='Team3.png' className='w-[300px] rounded-[30px]'></img>
+              <img src='/Team3.png' className='w-[300px] rounded-[30px]'></img>
               <p className='font-[Cinzel] font-regular text-[24px] text-white'>
                 Andrew baron
               </p>
-              <p className='font-[HkGrotesk] text-[18px] text-white text-center'>
+              <p className=' text-[18px] text-white text-center'>
               Community and Marketing Director
               </p>
             </div>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn="animate__backInUp">
             <div className='flex flex-col space-y-5 items-center'>
-              <img src='Team2.jpeg' className='w-[300px] rounded-[30px]'></img>
+              <img src='/Team2.jpeg' className='w-[300px] rounded-[30px]'></img>
               <p className='font-[Cinzel] font-regular text-[24px] text-white'>
                 Will
               </p>
-              <p className='font-[HkGrotesk] text-[18px] text-white'>
+              <p className=' text-[18px] text-white'>
               Head of Growth
               </p>
             </div>

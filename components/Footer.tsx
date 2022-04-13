@@ -42,19 +42,19 @@ export default function Footer(){
             
             <div className=" lg:w-full flex flex-col lg:flex-row lg:justify-between justify-center items-center py-[20px] space-y-10 lg:space-y-0">
                 <div>
-                <p className="font-[HkGrotesk] font-light text-[14px] text-white">
+                <p className=" font-light text-[14px] text-white">
                     © 2022 House Of Sparta.  All Rights Reserved
                 </p>
                 </div>
                 <div className="flex flex-row justify-end space-x-10 w-1/2 lg:w-2/12]"> 
                     <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://discord.gg/houseofsparta" target="_blank">        
-                        <img src="Discord.svg"></img>
+                        <img src="/Discord.svg"></img>
                     </a>
                     <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://twitter.com/Houseofsparta_" target="_blank">
-                        <img src="Twitter.svg"></img>
+                        <img src="/Twitter.svg"></img>
                     </a>    
                     <a className="hover:bg-[#FF1900]/10 hover:scale-[1.2] transition-all ease-in-out duration-150 rounded-md p-[10px]" href="https://www.instagram.com/houseofsparta_/" target="_blank">
-                        <img src="Instagram.svg"></img>
+                        <img src="/Instagram.svg"></img>
                     </a>
                 </div>
             </div>

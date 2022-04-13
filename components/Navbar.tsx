@@ -64,7 +64,7 @@ export default function Navbar() {
 
                 </div>
                 <div className="hidden lg:block lg:ml-6">
-                  <div className="flex xl:space-x-10 text-center">
+                  <div className="flex xl:space-x-10 items-center justify-center text-center">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -81,13 +81,13 @@ export default function Navbar() {
                 </div>
                 <div className='lg:flex space-x-5 hidden'>
                 <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://discord.gg/houseofsparta" target="_blank">        
-                        <img src="Discord.svg"></img>
+                        <img src="/Discord.svg"></img>
                     </a>
                     <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://twitter.com/Houseofsparta_" target="_blank">
-                        <img src="Twitter.svg"></img>
+                        <img src="/Twitter.svg"></img>
                     </a>    
                     <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/" target="_blank">
-                        <img src="Instagram.svg"></img>
+                        <img src="/Instagram.svg"></img>
                     </a>
                 </div>
               </div>
@@ -110,13 +110,13 @@ export default function Navbar() {
               ))}
               <div className='flex px-3 space-x-5 py-2'>
               <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://discord.gg/houseofsparta" target="_blank">        
-                        <img src="Discord.svg"></img>
+                        <img src="/Discord.svg"></img>
                     </a>
                     <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://twitter.com/Houseofsparta_" target="_blank">
-                        <img src="Twitter.svg"></img>
+                        <img src="/Twitter.svg"></img>
                     </a>    
                     <a className='hover:bg-black/90 hover:scale-[1.2] rounded-md p-[10px] transition-all ease-in-out duration-150' href="https://www.instagram.com/houseofsparta_/" target="_blank">
-                        <img src="Instagram.svg"></img>
+                        <img src="/Instagram.svg"></img>
                     </a>
                 </div>
             </div>

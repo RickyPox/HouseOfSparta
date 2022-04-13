@@ -17,17 +17,17 @@ export default function Milestones(){
                     <div className="bg-gradient-to-b from-black to-black/0 h-[165px] w-screen"></div>
                 </div>
                 <ScrollAnimation animateOnce animateIn="animate__fadeIn" className="z-20">
-                    <div className="flex justify-between items-center 2xl:px-[300px] lg:px-[160px] px-[20px]">
-                        <div className="w-1/2">
+                    <div className="flex md:flex-row flex-col justify-between items-center 2xl:px-[300px] lg:px-[160px] px-[20px]">
+                        <div className="md:w-1/2">
                             <H1 title="Roadmap"></H1>
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <h1 className="font-[Cinzel] font-regular text-[20px] lg:text-[20px] text-white z-10">DISCOVER A ROADMAP UNLIKE ANY OTHER – FOCUSED ON COMMUNITY, UTILITY, AND INNOVATION.</h1>
                         </div>
                     </div>
                 </ScrollAnimation>
                     {/* <!-- component --> */}
-                <div className="relative wrap p-10 h-full w-full z-20">
+                <div className="relative wrap md:p-10 p-[20px] h-full w-full z-20">
                     <ScrollAnimation animateOnce animateIn="animate__fadeIn">
                         <div className="w-[2px] absolute roadmapLine h-full left-[50%]"></div>
                     </ScrollAnimation>
@@ -39,9 +39,9 @@ export default function Milestones(){
                             <div className="z-20 flex items-center order-1 bg-black border-[3px] border-[#FF1900] shadow-xl w-8 h-8 rounded-full ">
                                 <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white ">&#10004;</h1>
                             </div>                    
-                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black milestone ">
+                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 md:px-6 px-[5px] py-4 hover:scale-125 hover:z-30 hover:bg-black milestone ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 1 Q4 2021</h1>
-                                <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] ">                                       
+                                <p className=" md:text-[18px] text-[14px] text-white leading-[30px] ">                                       
                                 &#10004; Concept art <br></br>
                                 &#10004; Game concepts <br></br>
                                 &#10004; Website <br></br>
@@ -58,9 +58,9 @@ export default function Milestones(){
                             <div className="z-20 flex items-center order-1 bg-black border-[3px] border-[#FF1900]   shadow-xl w-8 h-8 rounded-full">
                                 <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white stage">&#10004;</h1>
                             </div>                           
-                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black milestone text-right ">
+                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 md:px-6 px-[5px] py-4 hover:scale-125 hover:z-30 hover:bg-black milestone text-right ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 2 Q1 2022</h1>
-                                <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] ">                                       
+                                <p className=" md:text-[18px] text-[14px] text-white leading-[30px] ">                                       
                                 &#10004; Project Litepaper <br></br>
                                 &#10004; 4,600 Spartan Army NFT Launch on Fractal - Sold Out <br></br>
                                 &#10004; Unveil Gaming Studio Partner iLogos <br></br>
@@ -76,9 +76,9 @@ export default function Milestones(){
                             <div className="z-20 flex items-center order-1 bg-black border-[3px] border-gray-500 shadow-xl w-8 h-8 rounded-full">
                                 <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white">3</h1>
                             </div>
-                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black  milestone ">
+                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 md:px-6 px-[5px] py-4 hover:scale-125 hover:z-30 hover:bg-black  milestone ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 3 Q2 2022 </h1>
-                                <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] ">                                       
+                                <p className=" md:text-[18px] text-[14px] text-white leading-[30px] ">                                       
                                     - Seed Fundraising Round  <br></br>
                                     - Electrum NFT Staking Go-Live  <br></br>
                                     - Greek Gods $Electrum Auction/Mint via Fractal <br></br>
@@ -94,9 +94,9 @@ export default function Milestones(){
                             <div className="z-20 flex items-center order-1 bg-black border-[3px] border-gray-500 shadow-xl w-8 h-8 rounded-full">
                                 <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white">4</h1>
                             </div>
-                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black  milestone text-right ">
+                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 md:px-6 px-[5px] py-4 hover:scale-125 hover:z-30 hover:bg-black  milestone text-right ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 4 Q3/Q4 2022</h1>
-                                <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] ">                                       
+                                <p className=" md:text-[18px] text-[14px] text-white leading-[30px] ">                                       
                                 - Drachma IDO <br></br>
                                 - 4,600 Persian Army NFT Launch on Fractal <br></br>
                                 - Launch of Web Based Mini Game via Fractal
@@ -112,9 +112,9 @@ export default function Milestones(){
                             <div className="z-20 flex items-center order-1 bg-black border-[3px] border-gray-500 shadow-xl w-8 h-8 rounded-full">
                                 <h1 className="mx-auto font-semiregular text-lg font-[Cinzel] text-white">5</h1>
                             </div>
-                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-125 hover:z-30 hover:bg-black  milestone ">
+                            <div className="order-1 bg-black/50 rounded-lg shadow-xl w-5/12 md:px-6 px-[5px] py-4 hover:scale-125 hover:z-30 hover:bg-black  milestone ">
                                 <h1 className="text-white font-[Cinzel] font-regular text-[30px] mb-[30px]">Phase 5 - 2023+ </h1>
-                                <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] ">                                       
+                                <p className=" md:text-[18px] text-[14px] text-white leading-[30px] ">                                       
                                     - Continual Development on Web Game <br></br>
                                     - Full Scale PVP / PVE Downloadable Game
                                 </p>

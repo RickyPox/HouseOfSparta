@@ -22,7 +22,7 @@ export default function NFTSpecs(){
         
         <div className="p-[40px] px-[20px] 2xl:px-[300px] lg:px-[160px] z-10">
         <ScrollAnimation animateOnce animateIn="animate__zoomIn">
-          <div className="grid grid-cols-4 mt-5 ">
+          <div className="grid md:grid-cols-4 grid-cols-2 mt-5 ">
             <div className="m-5">
               <img src="/SpartanNFT1.png"></img>
             </div>
@@ -36,7 +36,7 @@ export default function NFTSpecs(){
               <img src="/SpartanNFT4.png"></img>
             </div>
           </div>
-          <div className="grid grid-cols-4">
+          <div className="grid md:grid-cols-4 grid-cols-2">
             <div className="m-5">
               <img src="/SpartanNFT5.png"></img>
             </div>
@@ -52,7 +52,7 @@ export default function NFTSpecs(){
           </div>
           <div>
             <h1 className="font-[Cinzel] font-regular text-white text-[28px] text-center">Spartan NFT Utility</h1>
-            <p className="Font-[HkGrotesk] text-[18px] leading-[50px] mt-[20px] font-regular text-white text-center">
+            <p className=" text-[18px] leading-[50px] mt-[20px] font-regular text-white text-center">
             Holding a Spartan NFT will afford you a plethora of utility, ranging from early access to the Web-Based mini game, Staking ability & access to exclusive free Airdrops.
             </p>
           </div>

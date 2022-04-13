@@ -26,33 +26,33 @@ export default function Attributes(){
             {/* SLIDER */}
             <div className='w-[400px] absolute slider-item4 flex flex-col items-center'>
               <img src='/Spartan4.png'></img>
-              <p className='font-[HkGrotesk] text-[18px] text-white leading-[30px]'>Spartan Ice Warrior</p>
-              <p className='font-[HkGrotesk] font-regular text-[18px] text-white leading-[30px]'>Skin</p>
+              <p className=' text-[18px] text-white leading-[30px]'>Spartan Ice Warrior</p>
+              <p className=' font-regular text-[18px] text-white leading-[30px]'>Skin</p>
             </div>
             <div className='w-[400px] absolute slider-item5 flex flex-col items-center'>
               <img src='/Spartan5.png'></img>
-              <p className='font-[HkGrotesk] text-[18px] text-white leading-[30px]'>Immortal Spartan</p>
-              <p className='font-[HkGrotesk] font-regular text-[18px] text-white leading-[30px]'>Warrior Armour</p>
+              <p className=' text-[18px] text-white leading-[30px]'>Immortal Spartan</p>
+              <p className=' font-regular text-[18px] text-white leading-[30px]'>Warrior Armour</p>
               
             </div>
             <div className='w-[400px] absolute slider-item1 flex flex-col items-center'>
               <img src='/Spartan1.png'></img>
-              <p className='font-[HkGrotesk] text-[18px] text-white leading-[30px]'>Standard Spartan</p>
-              <p className='font-[HkGrotesk] font-regular text-[18px] text-white leading-[30px]'>Warrior Uniform</p>
+              <p className=' text-[18px] text-white leading-[30px]'>Standard Spartan</p>
+              <p className=' font-regular text-[18px] text-white leading-[30px]'>Warrior Uniform</p>
             </div>
             <div className='w-[400px] absolute slider-item2 flex flex-col items-center'>
               <img src='/Spartan2.png'></img>
-              <p className='font-[HkGrotesk] text-[18px] text-white leading-[30px]'>Elite Spartan Warrior</p>
-              <p className='font-[HkGrotesk] font-regular text-[18px] text-white leading-[30px]'>Helmet</p>
+              <p className=' text-[18px] text-white leading-[30px]'>Elite Spartan Warrior</p>
+              <p className=' font-regular text-[18px] text-white leading-[30px]'>Helmet</p>
             </div>
             <div className='w-[400px] absolute slider-item3 flex flex-col items-center'>
               <img src='/Spartan3.png'></img>
-              <p className='font-[HkGrotesk] text-[18px] text-white leading-[30px]'>Commander Spartan</p>
-              <p className='font-[HkGrotesk] font-regular text-[18px] text-white leading-[30px]'>Warrior Armour</p>
+              <p className=' text-[18px] text-white leading-[30px]'>Commander Spartan</p>
+              <p className=' font-regular text-[18px] text-white leading-[30px]'>Warrior Armour</p>
             </div>
           </div>  
           {/* SLIDER END*/}
-          <div className='flex w-[400px] justify-between items-center mb-[75px] z-10'>
+          <div className='flex w-[400px] px-[20px] justify-between items-center mb-[75px] z-10'>
             <p className='font-[Cinzel] font-regular text-item1'>Common</p>
             <div className='w-[12px] h-[12px] rounded-full text-item2'></div>
             <div className='w-[12px] h-[12px] rounded-full text-item3'></div>
@@ -60,7 +60,7 @@ export default function Attributes(){
             <p className='font-[Cinzel] font-regular text-item5'>Rare</p>   
           </div>
           <div className="z-10 flex items-center justify-center">
-          <a href='Rarity.jpg' target="_blank" className=' py-[25px] px-[60px] rounded-[15px] bg-[#69000070] hover:bg-[#69000090] text-white font-[HkGrotesk] font-regular text-[24px]'>See full rarity</a>
+          <a href='/Rarity.jpg' target="_blank" className=' py-[25px] px-[60px] rounded-[15px] bg-[#69000070] hover:bg-[#69000090] text-white  font-regular text-[24px]'>See full rarity</a>
           </div>
           </ScrollAnimation>
         </div>
@@ -78,7 +78,7 @@ export default function Attributes(){
                       <img src="/SpartanCard3.png" alt="image3"/>
                   </div>
               </Carousel>
-              <p className='font-[HkGrotesk] font-regular text-[18px] text-white leading-[30px] z-20'>*Please note that the above attributes are for demonstration purposes only and are not representative of true in-game attributes</p>
+              <p className=' font-regular text-[18px] text-white leading-[30px] z-20'>*Please note that the above attributes are for demonstration purposes only and are not representative of true in-game attributes</p>
         </div>
       </ScrollAnimation>
       </div>

@@ -4,14 +4,12 @@ import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 import HouseOfSparta from '../components/HouseOfSparta'
 import Attributes from '../components/Attributes'
-import GameOverview from '../components/Game'
 import Pillars from '../components/Pillars'
 import NFTSpecs from '../components/NFTSpecs'
 import Team from '../components/Team'
 import Partners from '../components/Partners'
 import Spartans3D from '../components/3DSpartans'
 import Milestones from '../components/Milestones'
-
 
 export default function Home() {
 
@@ -37,37 +35,29 @@ export default function Home() {
         {/* Bg Images */}
 
             <img src='/minataur.png' 
-            className='absolute 
+            className='absolute md:block hidden
             scale-[3] top-[800px] left-[300px] 
             xl:scale-[2] xl:left-[500px] xl:top-[800px] opacity-30 z-10' data-aos="fade-in">
             </img>
 
       
           <img src='/medusa.png' 
-          className='absolute 
+          className='absolute md:block hidden
           scale-[3] top-[4800px] right-[300px] 
           xl:scale-[2] xl:right-[600px] xl:top-[4900px] opacity-30 z-10'>
           </img>
 
-          <img src='/titan.png' className=' absolute 
+          <img src='/titan.png' className=' absolute md:block hidden
           scale-[3] top-[8500px] left-[100px] 
           xl:scale-[1.5] xl:left-[200px] xl:top-[8800px] opacity-30 z-10'>
-          </img>
-
-          <img src='/echidna.png' className=' absolute 
-          scale-[3] top-[10500px] -left-[300px] 
-          xl:scale-[1.5] xl:-left-[300px] xl:top-[11000px] opacity-30 z-10'>
-          </img>
-
-          <img src='/manticore.png' className=' absolute 
-          scale-[2] top-[12300px] left-[300px] 
-          xl:scale-[1] xl:left-[600px] xl:top-[12050px] opacity-30 z-10'>
           </img>
 
         <HouseOfSparta></HouseOfSparta>
         <Milestones></Milestones>
         <Attributes></Attributes>
+        <div className='hidden xl:block'>
         <Spartans3D></Spartans3D>
+        </div> 
         <Pillars></Pillars>
         <NFTSpecs></NFTSpecs>
         <FAQ></FAQ>

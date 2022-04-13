@@ -38,7 +38,7 @@ export default function FAQ() {
                           </Disclosure.Button>
                         </dt>
                         <Disclosure.Panel as="dd" className="mt-2 pr-12 answer">
-                          <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                          <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                             We are planning to launch Feb 1st.
                           </p>
                         </Disclosure.Panel>
@@ -63,10 +63,10 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                         Initially 4600 Spartans will be available to mint on Solana
                         </p>
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">              
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">              
                         Later down the line, 4600 Persians will be available to mint
                         </p>
                       </Disclosure.Panel>
@@ -91,7 +91,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                         Royalties will go to the community treasury, which will be used directly for collectible airdrops, floor burns, lotteries raids, and project development.
                         </p>
                       </Disclosure.Panel>
@@ -116,7 +116,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                           Yes, you will start the game with a larger province and army with greater attributes
                         </p>
 
@@ -142,7 +142,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                           We were the first ever launch on fractal, you can also head over to their site to pick up Spartans and airdrops on secondary – <a href='https://www.fractal.is/houseofsparta' className='text-[#FF1900]' target="_blank">https://www.fractal.is/houseofsparta</a>
                         </p>
                       </Disclosure.Panel>
@@ -167,7 +167,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                         Absolutely, they entitle you to raids and airdrops that are currently ongoing! They will also grant you access to the game and a later ability to stake your NFTs.  
                         </p>
                       </Disclosure.Panel>
@@ -192,7 +192,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12 answer ">
-                        <p className="font-[HkGrotesk] text-[18px] text-white leading-[30px] mt-[20px]">
+                        <p className=" text-[18px] text-white leading-[30px] mt-[20px]">
                           Holding a Spartan or a Persian in your wallet will grant you access to the game. The rarer your NFT the better your starting position in the game will be. Airdrops will also confer small increases in passive abilities in game.   
                         </p>
                       </Disclosure.Panel>
